@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Fine..Thank You..Love You (2014)</title>
+    <title>Centered Video Player</title>
+    <style>
+        /* Center the content horizontally and vertically */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            text-align: center;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>MP4 Video Example</h1>
-
-    <video width="640" height="360" controls>
-        <source src="https://ia801609.us.archive.org/16/items/i-fine..-thank-you..-love-you/I%20Fine..Thank%20You..Love%20You.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+        <h1>I Fine..Thank You Love You (2014)</h1>
+        <video controls>
+            <source src="https://ia801609.us.archive.org/16/items/i-fine..-thank-you..-love-you/I%20Fine..Thank%20You..Love%20You.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
 </body>
 </html>
